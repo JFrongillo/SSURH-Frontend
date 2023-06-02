@@ -1,0 +1,30 @@
+$dark: #D24700;
+
+/* Default styles for the body */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+  
+  /* Styles for smaller screens */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+}
+  
+  /* Styles for larger screens */
+@media (min-width: 1200px) {
+    body {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+}
+
+
+
+
+
+
+
+@import "~bootstrap/scss/bootstrap.scss"

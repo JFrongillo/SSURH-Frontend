@@ -1,0 +1,104 @@
+@media (orientation: landscape) {
+   .page {
+     flex-direction: row;
+   }
+   .user-edit {
+     flex-direction: row;
+     align-items: flex-start;
+   }
+   .research-console {
+     margin-left: 20px;
+   }
+ }
+ 
+ @media (max-width: 1024px) and (orientation: landscape) {
+   .page {
+     flex-direction: column;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .research-console {
+     margin-left: 0px;
+     margin-top: 20px;
+   }
+   .page, .user-edit {
+     gap: 0px;
+   }
+ }
+ 
+ .user-edit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: flex-start;
+ }
+ 
+ .edit-form {
+    min-width: 400px; /* Increase the minimum width of the edit form */
+ }
+ 
+ .page {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    padding-top: 30px;
+    margin: 30px;
+ }
+ 
+ .fixed-height-accordion {
+    max-height: 300px;
+    width: 80vw; /* Set the width to 80% of the viewport width */
+    overflow-y: auto;
+ }
+ 
+ .research-console {
+    max-width: 1000px;
+ }
+ 
+ .accordion-item {
+   width: 500px;
+ }
+
+ 
+ .options-row {
+    display: flex;
+    gap: 15px;
+ }
+ 
+ @media (max-width: 768px) {
+    .research-console {
+       max-width: 100%;
+       padding-left: 15px;
+       padding-right: 15px;
+    }
+    .fixed-height-accordion {
+       width: 100%;
+    }
+    .page {
+       flex-direction: column;
+       align-items: center;
+       gap: 50px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .fixed-height-accordion {
+       max-height: 200px;
+    }
+ }
+ 
+ @media (max-width: 320px) {
+    .fixed-height-accordion {
+       max-height: 150px;
+    }
+ }
+ 
+ @media (min-width: 1200px) {
+    .research-console {
+       max-width: 1200px;
+    }
+ }
+ 
+
+
+

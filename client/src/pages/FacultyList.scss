@@ -1,0 +1,95 @@
+.description{
+    display: flex; 
+    justify-content: center;
+    margin: 20px;
+    padding-top: 50px;
+    gap: 150px
+}
+
+.text p{
+    width:785px; 
+    height: 200px;
+    //Border there for debugging
+    //border:1px solid #f00;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+}
+
+
+.prof-list {
+    margin: 30px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+.prof-list > * {
+    flex-basis: calc(100% / 3 - 20px);
+    margin: 10px;
+}
+
+.prof-list a{
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding-top: 100px;
+        gap: 20px;
+    }
+
+    .prof-list {
+        padding-top: 100px;
+    }
+
+    .prof-list > * {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (min-width: 769px) and (orientation: portrait) {
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding-top: 100px;
+      }
+      
+      .text {
+        text-align: center;
+        max-width: 785px;
+      }
+      
+      .text p {
+        height: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .prof-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      }
+      
+      .prof-list > * {
+        flex-basis: calc(100% / 3 - 20px);
+      }
+      
+      .prof-list a {
+        text-decoration: none;
+      }
+        
+}
+  
+  
+  

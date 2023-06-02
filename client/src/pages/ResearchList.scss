@@ -1,0 +1,45 @@
+/* Center and align side-by-side page description */
+.page-description {
+    display: flex; 
+    justify-content: center;
+    margin: 20px;
+    padding-top: 50px;
+    gap: 150px
+    }
+    
+    .page-description .image {
+    
+    }
+    
+    .page-description .text {
+    flex-basis: 50%;
+    text-align: justify;
+    }
+    
+
+    /* Level the two research containers */
+    .research-container-list,
+    .open-research-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    padding-right: 10px;
+}
+    
+@media (max-width: 768px) and (orientation: portrait) {
+    /* Change to vertical stacking on smaller screens */
+    .page-description {
+    flex-direction: column;
+    align-items: center;
+    }
+    .research-container-list,
+    .open-research-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+  
