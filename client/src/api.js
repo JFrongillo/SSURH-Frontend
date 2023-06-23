@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const SERVER_URL = 'http://localhost:8080/api';
+const SERVER_URL = 'https://2d48dnzisg.execute-api.us-east-1.amazonaws.com/prod/api';
 
 export const login = (data) => axios.post(`${SERVER_URL}/login/`, data);
 export const signup = (data) => axios.post(`${SERVER_URL}/signup/`, data);
